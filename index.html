@@ -72,7 +72,18 @@
                 <td>Florida</td>    
                 <td>8 hours</td>    
             </tr>
-       
+            <hr>
+            <h3>Code Display</h3>
+            <blockquote>My website running on Apache 2, modGzip and deflate enabled and working!
+                I add the following code on my htaccces file but if I check my page on gzip compression test. no Compression..</blockquote>
+                <a href= "url"> https://stackoverflow.com/questions/20520314/enable-gzip-compression</a>
+            <pre>
+              # BEGIN GZIP
+               <ifmodule mod_deflate.c>
+               AddOutputFilterByType DEFLATE text/text text/html text/plain text/xml text/css application/x-javascript application/javascript
+               </ifmodule>
+              # END GZIP
+       </pre>
     </body>
 
 </html>
